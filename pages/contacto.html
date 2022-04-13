@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="eseets/img/logogrow.png">
     <script src="https://kit.fontawesome.com/41aadf3d71.js" crossorigin="anonymous"></script> 
@@ -37,37 +38,37 @@
     </div>
 
 </main>
-<div>
-    
-<form action="prosesos.php" method="post">
-    <fieldset class="contacto">
-    <p class="contacto">
-    <label for="nombre">Nombre: </label>
-    <input type="text" name="nombre" placeholder="ingresatunombre">
-    </p>
 
-    <p class="contacto">
-    <label for="apellido">Apellido: </label>
-    <input type="text" name="apellido" placeholder="ingresatuapellido">
-    </p>
 
-    <p class="contacto">
-        <label for="email">Email: </label>
-        <input type="text" name="email" placeholder="ingresatuemail">
-    </p>
-    <input type="submit" value="Enviar">
+<div class="container">
     
-    <h3 class="contacto">Envianos tu comentario</h3>
-    <textarea name="comentario" cols="30" rows="10"></textarea>
-    
-    <p class="contacto">
-        <input type="submit" value="enviar">
-    </p>
-    
-</fieldset>
-</form>
+    <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ingresatunombre">
+   </div>
+
+   <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ingresatuapellido">
+
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ingresatuemail">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Escribinos tu consulta:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="button" class="btn btn-success container">Enviar</button>
+  
+
+
+
 </div>
 
+<div>
 <footer class="piedepagina">
     <div class="desarrolladora">
         <h4>Todos los derechos reservados 2022</h4>
@@ -76,13 +77,21 @@
         <h4>Seguime en redes </h4>
     </div>
     <div class="redes-sociales">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
+        <div>
+        <img src="../eseets/img/icons8-instagram-48.png" ">
+        
+        
+        <img src="../eseets/img/icons8-youtube-cuadrado-48.png">
+        </div>
+        
 
-    </div>
-
-
+</div>
 </footer>
 
 
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
 </body>
+
+</html>

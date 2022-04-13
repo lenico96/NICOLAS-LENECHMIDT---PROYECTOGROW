@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: "Concert One";
+    src: url(../eseets/fonts/Concert\ One.ttf);
+}
+
+@font-face {
     font-family: 'Fjalla';
     src: url(../eseets/fonts/Fjalla.ttf);
 }
@@ -254,29 +259,6 @@ h4{
 
 
 
-.kitsoferta{
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #cacaca;
-    
-
-}
-
-.oferta1{
-    cursor:pointer
-}
-.oferta1 img:hover {filter: opacity(.5);}
-
-.oferta2{
-    cursor:pointer
-}
-.oferta2 img:hover {filter: opacity(.5);}
-
-.oferta3{
-    cursor:pointer
-}
-.oferta3 img:hover {filter: opacity(.5);}
 
 .lista{
     display: flex;
@@ -339,14 +321,17 @@ h4{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    margin-bottom: ;
 }
 
 .destacado h1{
     display: flex;
     justify-content: center;
     font-family: 'Roboto';
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 .carpa{
@@ -377,67 +362,6 @@ h4{
 }
 
 
-
-
-   .button-80 {
-     background: #fff;
-     backface-visibility: hidden;
-     border-radius: .375rem;
-     border-style: solid;
-     border-width: .125rem;
-     box-sizing: border-box;
-     color: #212121;
-     cursor: pointer;
-     display: inline-block;
-     font-family: Circular,Helvetica,sans-serif;
-     font-size: 1.125rem;
-     font-weight: 700;
-     letter-spacing: -.01em;
-     line-height: 1.3;
-     padding: .875rem 1.125rem;
-     position: relative;
-     text-align: left;
-     text-decoration: none;
-     transform: translateZ(0) scale(1);
-     transition: transform .2s;
-     user-select: none;
-     -webkit-user-select: none;
-     touch-action: manipulation;
-   }
-   
-   .button-80:not(:disabled):hover {
-     transform: scale(1.05);
-   }
-   
-   .button-80:not(:disabled):hover:active {
-     transform: scale(1.05) translateY(.125rem);
-   }
-   
-   .button-80:focus {
-     outline: 0 solid transparent;
-   }
-   
-   .button-80:focus:before {
-     content: "";
-     left: calc(-1*.375rem);
-     pointer-events: none;
-     position: absolute;
-     top: calc(-1*.375rem);
-     transition: border-radius;
-     user-select: none;
-   }
-   
-   .button-80:focus:not(:focus-visible) {
-     outline: 0 solid transparent;
-   }
-   
-   .button-80:focus:not(:focus-visible):before {
-     border-width: 0;
-   }
-   
-   .button-80:not(:disabled):active {
-     transform: translateY(.125rem);
-   }
 
 
 
@@ -543,3 +467,111 @@ h4{
         display: none;
     }
 }
+
+.destacadoss {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    
+  }
+  
+  .destacados2 {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: all 1s;
+    transition-duration: 0,5s;
+    cursor: pointer;
+  }
+
+  .destacados2:hover{
+      transform: translateY(-10px);
+      filter: opacity(.5);
+      
+      
+  }
+
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: black;
+    z-index: 1;
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+   }
+   
+   .button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+
+
+.carousel-inner{
+    max-height: 500px;
+}
+
+   .kitsoferta{
+       display: flex;
+       justify-content: space-evenly;
+   }
+
+   .container{
+       margin-top: 40px;
+       margin-bottom: 30px;
+       
+   }
+
+   .center{
+       display: flex;
+       justify-content: center;
+   }
