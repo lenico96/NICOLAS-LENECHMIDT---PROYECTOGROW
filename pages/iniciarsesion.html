@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="eseets/img/logogrow.png">
     <script src="https://kit.fontawesome.com/41aadf3d71.js" crossorigin="anonymous"></script> 
@@ -34,20 +35,31 @@
 <div>
     <h1 class="contacto">ACCEDE A TU CUENTA</h1>
 
-    <form action="" method="post">
-        <fieldset>
-        <p class="contacto">
-        <label for="Usuario">Usuario: </label>
-        <input type="text" name="Usuario" placeholder="ingresatuusuario">
-        </p>
-    
-        <p class="contacto">
-        <label for="Contraseña">Contraseña: </label>
-        <input type="password" name="Contraseña" placeholder="ingresatucontraseña">
-        </p class="contacto">
-        <input type="submit" name="Enviar" id="">
-        </fieldset>
 </div>
+<div class="container">
+
+    <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword">
+          
+         
+        </div>
+      </div>
+     
+</div>
+
+<div class="center container">
+    <button type="button" class="btn btn-success margin">Registrate</button>
+    <button type="button" class="btn btn-outline-success">ENTRAR</button>
+</div>
+
 
 <footer class="piedepagina">
     <div class="desarrolladora">
@@ -57,13 +69,18 @@
         <h4>Seguime en redes </h4>
     </div>
     <div class="redes-sociales">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
+        <div>
+        <img src="../eseets/img/icons8-instagram-48.png" ">
+        
+        
+        <img src="../eseets/img/icons8-youtube-cuadrado-48.png">
+        </div>
+        
 
-    </div>
-
-
+</div>
 </footer>
+
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 
 
 </body>
