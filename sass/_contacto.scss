@@ -1,0 +1,18 @@
+//* variables
+$color-tituloencabezadocontacto: #19903f;
+$tamañofuentecontacto: 40px;
+
+
+
+//* anidacion contacto
+.fondo3 {
+    .contact{
+        font-size: $tamañofuentecontacto;
+        color: $color-tituloencabezadocontacto;
+        font-family: 'Roboto';
+    }
+    .contacto3{
+        padding-top: 110px;
+    }
+        }
+

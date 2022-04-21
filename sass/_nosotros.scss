@@ -1,0 +1,44 @@
+///*variables
+$color-tituloencabezadonosotros: #14a14f;
+
+//*encabezado anidacion
+.fondo5 {
+    .contacto3{
+        padding-top: 110px;
+    
+    }
+    .contact{
+        font-size: 40px;
+        color: $color-tituloencabezadonosotros;
+        font-family: 'Roboto';
+            }
+        }
+
+//*contenido anidacion
+#quienes {
+    font-size: 25px;
+    margin-top: 20px;
+} 
+
+.mapafoto{
+    .caja1 #local{
+        font-size: 25px;
+        margin-top: 20px;
+        font-family: 'Roboto';
+        margin-bottom: 10px;
+    
+    }
+
+    .caja2 #donde{
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    margin-bottom: 10px;
+    }
+}
+
+.nosotros{
+    .parrafo{
+        margin-top: 10px;
+    }
+}
