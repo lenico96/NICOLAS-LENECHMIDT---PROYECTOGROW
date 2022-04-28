@@ -1,5 +1,6 @@
 @import "contacto";
 @import "nosotros";
+@import "kitscompletos";
 @font-face {
     font-family: 'Courage Road';
     src: url(../assets/fonts/Courage\ Road.ttf);
@@ -136,6 +137,10 @@ body{
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(8,1fr);
+}
+//* aplicando extend*//
+.fondo3{
+    @extend .fondo4;
 }
 
 .fondo3{

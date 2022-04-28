@@ -1,7 +1,7 @@
-///*variables
-$color-tituloencabezadonosotros: #14a14f;
 
-//*encabezado anidacion
+$color-tituloencabezadonosotros: #ffffff;
+
+
 .fondo5 {
     .contacto3{
         padding-top: 110px;
@@ -14,7 +14,7 @@ $color-tituloencabezadonosotros: #14a14f;
             }
         }
 
-//*contenido anidacion
+
 #quienes {
     font-size: 25px;
     margin-top: 20px;
@@ -42,3 +42,20 @@ $color-tituloencabezadonosotros: #14a14f;
         margin-top: 10px;
     }
 }
+
+//mapa
+$colores: (
+    'primario': green,
+    'secundario': blue,
+    'dark': black,
+);
+
+#quienes{
+    color: map-get($map: $colores, $key: 'primario' );
+    
+}
+
+
+
+
+
