@@ -127,6 +127,104 @@
   z-index: 1;
 }
 
+.navbar {
+  background-color: #FFF;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+.navbar .logogrow {
+  width: 400px;
+  height: 100px;
+  grid-column: 1/3;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.navbar .menu {
+  display: flex;
+  justify-content: space-around;
+  grid-column: 3/7;
+}
+.navbar .menubar {
+  display: block;
+  grid-column: 8/9;
+  cursor: pointer;
+}
+.navbar .shop {
+  grid-column: 8/9;
+}
+
+.principal .contenidoprincipal {
+  grid-column: 8/10;
+  grid-row: 3/7;
+  color: white;
+}
+.principal h3 {
+  font-family: "Courage Road";
+  margin-top: 10px;
+  font-size: 30px;
+  color: #1B1713;
+  text-transform: uppercase;
+}
+.principal h6 {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.principal .boton {
+  font-family: "Fjalla";
+  font-size: 16px;
+  font-weight: 600;
+  background: none;
+  color: #FFF;
+  padding: 10px 20px;
+  border: solid 2px white;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.ofertas h1 {
+  font-family: "Roboto";
+  font-size: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.destacadoss {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  width: 99%;
+  margin-left: 5px;
+}
+.destacadoss .margintop {
+  margin-top: 15px;
+}
+.destacadoss .destacados2 {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: all 1s;
+  transition-duration: 0, 5s;
+  cursor: pointer;
+}
+.destacadoss .nombre {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.destacadoss .button1 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 @font-face {
   font-family: "Courage Road";
   src: url(../assets/fonts/Courage\ Road.ttf);
